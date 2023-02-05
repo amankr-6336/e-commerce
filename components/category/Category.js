@@ -8,11 +8,11 @@ function Category({ category }) {
     return (
         <div
             className="Category"
-            style={{backgroundImage: `url(${category?.attributes?.image?.data?.attributes?.url})`}}
-            onClick={() => navigate(`/category/${category?.attributes?.key}`)}
+            style={{backgroundImage: `url(${category.attributes.image.data.attributes.url})`}}
+            onClick={() => navigate(`/category/${category.attributes.key}`)}
         >
             <div className="category-content center">
-                <h3 className="heading">{category?.attributes?.title}</h3>
+                <h3 className="heading">{category.attributes.title}</h3>
             </div>
         </div>
     );
